@@ -1,5 +1,5 @@
 "use client"
-import placeholderImage from "../public/working.svg"
+import placeholderImage from "../public/workingOn.png"
 import Image from "next/image"
 
 const EmptyPage = () => {

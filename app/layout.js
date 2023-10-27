@@ -15,8 +15,8 @@ const lato = Lato({
 const openSans = Open_Sans({ subsets: ["latin"], variable: "--font-openSans" })
 
 export const metadata = {
-  title: 'OpeninApp | Listed.',
-  description: 'Lab Building Products for The Creator Economy',
+  title: 'Listed.OpeninApp',
+  description: 'Products building for The Creators'
 }
 
 export default function RootLayout({ children }) {
