@@ -51,7 +51,7 @@ const StatsCard = () => {
               style={{ boxShadow:'2px 2px 10px 2px #E0E0E0',
 flexShrink: '0' }}
               className=" rounded-[20px] py-5 md:px-5 px-5
-               bg-white hover:bg-gray-100
+               bg-white hover:bg-blue-200
                "
           >
             <span

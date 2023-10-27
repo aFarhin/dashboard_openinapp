@@ -11,8 +11,9 @@ const TopProductsCard = () => {
 
   const pieData = pieChartData[selectedMonth]
   return (
-    <article className="bg-white rounded-[20px] py-[30px] lg:px-[40px] px-8 space-y-[20px]">
-      <div className="flex justify-between items-center">
+    <article  style={{ boxShadow:'2px 2px 10px 2px #E0E0E0'}}
+    className="bg-white hover:bg-blue-200 rounded-[20px] py-[30px] lg:px-[40px] px-8 space-y-[20px]">
+     <div className="flex justify-between items-center">
         <h4 className="text-lg font-bold">Top products</h4>
         <button
           className="text-xs text-[#858585] flex justify-center items-center space-x-2"

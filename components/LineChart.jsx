@@ -12,12 +12,13 @@ import {
 const LineChartComponent = ({ lineChartData }) => {
   const data = [
     { name: `Week 1`, User: lineChartData.user[0], Guest: lineChartData.guest[0] },
-    ...lineChartData?.user.slice(1).map((_, index) => ({
+    ...lineChartData?.user.slice(3).map((_, index) => ({
       name:  `Week ${index + 2}`,
-      User: lineChartData.user[index + 1],
-      Guest: lineChartData.guest[index + 1],
+      User: lineChartData.user[index+1 ],
+      Guest: lineChartData.guest[index+1],
     })),
     { name: `Week ${lineChartData.user.length-1}`, User: lineChartData.user[4], Guest: lineChartData.guest[4] },
+    
   ]
   return (
     <ResponsiveContainer

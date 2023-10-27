@@ -9,10 +9,10 @@ const EmptyPage = () => {
         <Image
           src={placeholderImage}
           alt="Empty State"
-          width="200"
-          height="200"
+          width="500"
+          height="500"
         />
-        <p className=" text-center mt-5 font-medium "> Still Working ..... </p>
+        <p className=" text-center mt-5 font-medium "> Working on it ... </p>
       </div>
     </section>
   )

@@ -11,7 +11,7 @@ const LineChartContainer = () => {
     setMonth(e.target.value)
   }
   return (
-    <div className=" bg-white rounded-[20px] py-[30px] lg:px-[40px] px-8 ">
+    <div style={{ boxShadow:'2px 2px 10px 2px #E0E0E0'}} className=" bg-white rounded-[20px] py-[30px] lg:px-[40px] px-8  ">
       <div className=" flex justify-between items-center ">
         <div className="">
           <h4 className=" text-lg font-bold ">Activities</h4>
