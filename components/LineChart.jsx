@@ -17,7 +17,7 @@ const LineChartComponent = ({ lineChartData }) => {
       User: lineChartData.user[index + 1],
       Guest: lineChartData.guest[index + 1],
     })),
-    { name: null, User: lineChartData.user[4], Guest: lineChartData.guest[4] },
+    { name: `Week ${lineChartData.user.length-1}`, User: lineChartData.user[4], Guest: lineChartData.guest[4] },
   ]
   return (
     <ResponsiveContainer
@@ -46,22 +46,24 @@ const LineChartComponent = ({ lineChartData }) => {
           }}
         />
         <Bar
+         barSize={40}   
           type="monotone"
           dataKey="Guest"
           // stroke="#E9A0A0"
           strokeWidth={3}
           dot={false}
           // activeDot={{ r: 4 }}
-          fill="#E9A0A0"
+          fill="#98D89E"
         />
         <Bar
+         barSize={40}   
           type="monotone"
           dataKey="User"
           // stroke="#9BDD7C"
           strokeWidth={3}
           dot={false}
           // activeDot={{ r: 4 }}
-          fill="#98D89E"
+          fill="#EE8484"
         />
       </BarChart>
     </ResponsiveContainer>

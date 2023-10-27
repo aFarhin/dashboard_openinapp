@@ -12,7 +12,7 @@ function Login() {
     const[error, setError] = useState(false)
     const session = useSession()
     const router = useRouter()
-    console.log("seeesin in login", session.status)
+    console.log("session login status : ", session.status)
 
     //CONDITION OF LOGIn using nextauth
      if(session.status === "authenticated") {
