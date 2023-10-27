@@ -5,7 +5,7 @@ import Sidebar from "./Sidebar"
 
 const SideNavigation = ({ closeSideNavigation }) => {
   return (
-    <nav className=" md:hidden w-full bg-black text-white fixed z-30 top-0 left-0 right-0 bottom-0 ">
+    <nav className=" md:h-[100vh] w-full bg-black text-white fixed z-30 top-0 left-0 right-0 bottom-0 ">
       <button
         className=" block ml-auto mt-5 mx-5 "
         onClick={closeSideNavigation}
