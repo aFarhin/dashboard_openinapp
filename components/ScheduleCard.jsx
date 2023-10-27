@@ -11,7 +11,7 @@ const ScheduleCard = () => {
     instaLink: '',
     youtubeLink:''
   });
-console.log('fommmmmmm', formData)
+console.log('Form Data : ', formData)
   const openModal = () => {
     setIsModalOpen(true);
     setCurrentStep('basic');
@@ -39,7 +39,7 @@ console.log('fommmmmmm', formData)
      setFormData(formData)
      console.log(setFormData)
       console.log('Form Data:', formData);
-      closeModal(); // Close the modal after completing the form
+      closeModal(); 
     }
 
   };
@@ -290,7 +290,7 @@ console.log('fommmmmmm', formData)
 
         }
         .active-button {
-  border-bottom: 3px solid #3E84F8; /* Add the desired underline style */
+  border-bottom: 3px solid #3E84F8;
 }
       `}</style>
     </div>
