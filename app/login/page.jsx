@@ -65,8 +65,8 @@ function Login() {
   </div>
 
   <div className="flex flex-col justify-end items-center h-[50%]">
-    <div className="md:mr-20 py-5 md:py-10">
-    <div className='btn'></div>
+    <div className="md:mr-10 py-5 md:py-10">
+    <div className='btn'>
       <button className="mr-5 md:mr-10">
         <GithubIcon />
       </button>
@@ -79,6 +79,7 @@ function Login() {
       <button>
         <DiscordIcon />
       </button>
+      </div>
     </div>
   </div>
 </section>
