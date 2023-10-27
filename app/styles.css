@@ -1,0 +1,91 @@
+.slanted-div {
+    background: linear-gradient(to bottom right, #0a398a);
+    width: 720px;
+    position: relative;
+    overflow: hidden;
+    clip-path: polygon(0% 0%, 100% 0%, 84% 100%, 0% 100%);
+    background-color: #286DE0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out forwards; 
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(90%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0); 
+        opacity: 1;
+    }
+}
+
+@keyframes circularMotion {
+    0% {
+        transform: rotate(0deg); 
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(360deg);
+        opacity: 2;
+    }
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 2; 
+    }
+}
+.slanted-div h1 {
+    font-size: 5rem;
+    color: white;
+    font-weight: bold;
+    animation: slideIn 2s ease-in-out;
+}
+.slanted-div .btn button{
+    padding: 1rem;
+}
+.slanted-div button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    animation: circularMotion 3s ease-in-out;
+}
+.logo {
+    color: whitesmoke;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3rem;
+    margin-top: 1.2rem;
+    height: auto;
+    animation: slideIn 2s linear ;
+}
+
+@media (max-width: 767px) {
+    .slanted-div {
+        height: 100vh;
+        width: 100%;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+        padding: 10px;
+    }
+
+    .slanted-div h1 {
+        font-weight: bold;
+        font-size: 1rem;
+        color: white;
+    }
+
+    .slanted-div button {
+        background-color: transparent;
+    }
+
+    .logo {
+       display: none;
+    }
+}
